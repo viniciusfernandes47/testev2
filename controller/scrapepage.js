@@ -37,7 +37,7 @@ const scrape = async url => {
 			data.push({
 				destination: item.innerText,
 				price: price[index].innerText,
-				subtitulosaa: subtitulo[index].innerText,
+				subtitulos: subtitulo[index].innerText,
 				desconto: desconto[index].innerText,
 				link: link[index].href,
 				imagem: getComputedStyle(document.querySelector(a)).backgroundImage.slice(5,-2)
@@ -48,7 +48,7 @@ const scrape = async url => {
 		return data;
 		
 	})
-	fs.writeFile("pacotes.json", JSON.stringify(result), function(err) {
+	fs.writeFile(__dirname +"/pacotes.json", JSON.stringify(result), function(err) {
 		if (err) throw err;
 		console.log('complete');
 		}
@@ -80,7 +80,7 @@ const scrape = async url => {
 
 	})
 
-	fs.writeFile("hoteis.json", JSON.stringify(resultado), function(err) {
+	fs.writeFile(__dirname +"/hoteis.json", JSON.stringify(resultado), function(err) {
 		if (err) throw err;
 		console.log('complete');
 		}
