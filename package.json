@@ -1,0 +1,23 @@
+{
+  "name": "nodescraping",
+  "version": "1.0.0",
+  "description": "Web scraping using node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "scraping",
+    "nodejs"
+  ],
+  "author": "Vinicius Fernandes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "nodemon": "^1.18.10",
+    "puppeteer": "^1.10.0"
+  },
+  "devDependencies": {}
+}
