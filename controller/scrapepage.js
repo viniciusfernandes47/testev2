@@ -37,7 +37,7 @@ const scrape = async url => {
 			data.push({
 				destination: item.innerText,
 				price: price[index].innerText,
-				subtitulo: subtitulo[index].innerText,
+				subtitulosaa: subtitulo[index].innerText,
 				desconto: desconto[index].innerText,
 				link: link[index].href,
 				imagem: getComputedStyle(document.querySelector(a)).backgroundImage.slice(5,-2)
